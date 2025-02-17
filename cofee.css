@@ -198,11 +198,13 @@ nav .logo {
   justify-content: space-between;
   gap: 2rem;
   text-align: center;
+  width: 50%;
 }
 .about-section .about-details .description {
   font-size: var(--fontsize-m);
   color: var(--dark-color);
   font-weight: var(--fontweight-normal);
+  text-align: justify;
 }
 .about-details .social-link-list {
   display: flex;
@@ -217,6 +219,55 @@ nav .logo {
 .about-details .social-link-list .social-link:hover {
   color: var(--secondary-color);
   transition: 0.3s;
+}
+
+/* menu section */
+.Menu-section {
+  background-color: var(--dark-color);
+  color: var(--white-color);
+  padding: 80px 0;
+}
+.Menu-section .section-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+.Menu-section .section-content .title {
+  color: var(--secondary-color);
+}
+.Menu-section .section-content .menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  justify-content: center;
+}
+.Menu-section .section-content .menu-list .menu-item-title {
+  font-size: var(--fontsize-m);
+  font-weight: var(--fontweight-bold);
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+}
+.Menu-section .section-content .menu-list .menu-item-description {
+  font-size: var(--fontsize-s);
+  text-align: center;
+}
+.Menu-section .section-content .menu-list .menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: var(--borderradius-m);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  width: 300px;
+}
+.Menu-section .section-content .menu-list .menu-item .menu-item-image {
+  max-width: 70%;
+  aspect-ratio: 1;
+  margin-bottom: 5px;
 }
 
 @media screen and (max-width: 890px) {
@@ -292,6 +343,7 @@ nav .logo {
   .Main-section .Main-Details .buttons {
     justify-content: center;
   }
+  /* about section */
   .about-section .section-content {
     flex-direction: column-reverse;
     gap: 2rem;
@@ -299,5 +351,13 @@ nav .logo {
   .about-section .about-image-section .about-image {
     width: 280px;
     height: 280px;
+  }
+  .about-section .about-details {
+    width: 100%;
+    text-align: justify;
+  }
+  .Menu-section .section-content .menu-list .menu-item .menu-item-image {
+    max-width: 40%;
+    aspect-ratio: 1;
   }
 }
